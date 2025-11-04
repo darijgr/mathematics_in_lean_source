@@ -231,7 +231,7 @@ example (n : ℕ): (fib n) ^ 2 + (fib (n + 1)) ^ 2 = fib (2 * n + 1) := by
 
 /- TEXT:
 Lean's mechanisms for defining recursive functions are flexible enough to allow arbitrary
-recursive calls, as long the complexity of the arguments decrease according to some
+recursive calls, as long as the complexity of the arguments decrease according to some
 well-founded measure.
 In the next example, we show that every natural number ``n ≠ 1`` has a prime divisor,
 using the fact that if ``n`` is nonzero and not prime, it has a smaller divisor.
